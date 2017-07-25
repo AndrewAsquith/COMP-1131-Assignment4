@@ -7,7 +7,7 @@
 // This is the Card Tester class for lack of a better name.
 // It deals 5 random cards to start as per the requirements
 // It then acts as a set of tests for the Card class and it's methods
-// The individual test scenarios are detailed inline
+// The individual test scenarios are detailed within
 //
 //==============================================
 

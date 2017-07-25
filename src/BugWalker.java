@@ -15,7 +15,6 @@ public class BugWalker {
 
 	public static void main(String[] args) {
 		
-		
 		//Some constants and descriptions of what we expect of the bugs
 		
 		// bug 1 goes 5 steps each direction
@@ -99,7 +98,7 @@ public class BugWalker {
 		//Bug should be facing right
 		System.out.println("Bug 3 is facing: \t" + bug3.getCurrentDirection());
 		
-		//bug 2 started at +2, go 2 more to get to +4
+		//bug 3 started at +2, go 2 more to get to +4
 		for (int i = 0; i<BUG3_DISTANCE1; i++) {
 			bug3.move();
 			System.out.println("Bug 3 after move " + (i+1) + ": \t" + bug3);

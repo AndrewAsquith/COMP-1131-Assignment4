@@ -15,6 +15,7 @@ public class Bug {
 
 	// the bug's current position
 	private int currentPosition;
+	
 	// boolean indicating if the bug is facing right
 	private boolean isFacingRight;
 	

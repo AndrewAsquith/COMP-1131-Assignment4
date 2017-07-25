@@ -31,6 +31,7 @@ public class Card {
 
 	//card suit
 	private int suit;
+	
 	//card face value
 	private int face;
 
@@ -50,14 +51,16 @@ public class Card {
 	public Card(int setFace, int setSuit) {
 		
 		// if the provided value is valid use it, if not, choose a random one
-		if ((setFace < ACE) || (setFace > KING)) {
+		// didn't use Card.ACE and Card.King for clarity of range
+		if ((setFace < 1) || (setFace > 13)) {
 			face = getRandomFace();
 		} else {
 			face = setFace;
 		}
 		
 		// if the provided suit was not recognized, choose a random one
-		if ((setSuit < HEARTS) || (setSuit > CLUBS)) {
+		// didn't use Card.HEARTS and Card.CLUBs for clarity of range
+		if ((setSuit < 1) || (setSuit > 4)) {
 			suit = getRandomSuit();
 		} else {
 			suit = setSuit;
@@ -108,7 +111,7 @@ public class Card {
 
 	// public setter to set the face value, if the input is invalid it is ignored
 	public void setFace(int newFace) {
-		if ((newFace >= ACE) && (newFace <= KING))
+		if ((newFace >= 1) && (newFace <= 13))
 			face = newFace;
 	}
 
